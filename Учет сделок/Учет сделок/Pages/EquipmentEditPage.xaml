@@ -1,0 +1,35 @@
+﻿<Page x:Class="Учет_сделок.Pages.EquipmentEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Учет_сделок.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1000"
+      Title="Добавление оборудования">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock Foreground="White" Margin="0,45,0,10" Height="35" Width="400" TextAlignment="Center" Text="Введите марку " FontSize="22"></TextBlock>
+            <TextBox FontSize="16" x:Name="TbStamp" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,45,0,10" Height="35" Width="400" TextAlignment="Center" Text="Введите модель " FontSize="22"></TextBlock>
+            <TextBox FontSize="16" x:Name="TbModel" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,45,0,10" Height="35" Width="400" TextWrapping="Wrap" TextAlignment="Center" Text="Введите мощность оборудования " FontSize="22"></TextBlock>
+            <TextBox MaxLength="3" FontSize="16" PreviewTextInput="OnlyNumbers"  x:Name="TbPower" Height="30" Width="350" Margin="10"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock Foreground="White" Margin="0,45,0,10" Height="35" Width="410" TextAlignment="Center" Text="Введите единицу измерения мощности" FontSize="22"></TextBlock>
+            <TextBox MaxLength="6" FontSize="16" PreviewTextInput="OnlyLetters" x:Name="TbUnitOfMeasurement" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,45,0,10" Height="35" Width="425" TextAlignment="Center" Text="Введите кол-во оборудования " FontSize="22"></TextBlock>
+            <TextBox MaxLength="2" FontSize="16" PreviewTextInput="OnlyNumbers" x:Name="TbQuantity" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock TextWrapping="Wrap" Foreground="White" Margin="0,45,0,10" Height="35" Width="400" TextAlignment="Center" Text="Введите обслуживание оборудования " FontSize="22"></TextBlock>
+            <TextBox FontSize="16" x:Name="TbService" Height="30" Width="350" Margin="10"/>
+        </StackPanel>
+        <Button Click="BtnReady_Click" HorizontalAlignment="Center" Margin="0 0 0 30" Grid.ColumnSpan="2" VerticalAlignment="Bottom"  x:Name="BtnReady"  Content="Выполнить" FontSize="20" Height="45" Width="200"></Button>
+
+    </Grid>
+</Page>

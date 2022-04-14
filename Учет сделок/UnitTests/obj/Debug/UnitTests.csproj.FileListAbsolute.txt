@@ -1,0 +1,28 @@
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\UnitTests.dll.config
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\EntityFramework.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Учет сделок.exe
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Учет сделок.pdb
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Учет сделок.exe.config
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\EntityFramework.xml
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\obj\Debug\UnitTests.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\obj\Debug\UnitTests.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\obj\Debug\UnitTests.csproj.CopyComplete
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\User\Source\Repos\Учет сделок\UnitTests\obj\Debug\UnitTests.pdb

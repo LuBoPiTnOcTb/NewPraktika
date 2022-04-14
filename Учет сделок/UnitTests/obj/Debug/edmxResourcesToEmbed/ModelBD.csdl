@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountingforTransactionsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Bank_Details">
+    <Key>
+      <PropertyRef Name="ID_Bank_Details" />
+    </Key>
+    <Property Name="ID_Bank_Details" Type="Int32" Nullable="false" />
+    <Property Name="INN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PPC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BIC" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Payment_Account" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Correspondent_Account" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="OGRN" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK__Company__ID_Bank__46E78A0C" FromRole="Bank_Details" ToRole="Company" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="ID_Company" />
+    </Key>
+    <Property Name="ID_Company" Type="Int32" Nullable="false" />
+    <Property Name="ID_Bank_Details" Type="Int32" Nullable="false" />
+    <Property Name="Title_Company" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address_Company" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Number_Phone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Director" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Bank_Details" Relationship="Self.FK__Company__ID_Bank__46E78A0C" FromRole="Company" ToRole="Bank_Details" />
+    <NavigationProperty Name="Object" Relationship="Self.FK__Object__ID_Compa__4D94879B" FromRole="Company" ToRole="Object" />
+  </EntityType>
+  <EntityType Name="Contract">
+    <Key>
+      <PropertyRef Name="ID_Contract" />
+    </Key>
+    <Property Name="ID_Contract" Type="Int32" Nullable="false" />
+    <Property Name="Date_Conclusion" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Valid_For" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ID_Object" Type="Int32" Nullable="false" />
+    <Property Name="ID_Employee" Type="Int32" Nullable="false" />
+    <Property Name="ID_Equipment" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK__Contract__ID_Emp__49C3F6B7" FromRole="Contract" ToRole="Employee" />
+    <NavigationProperty Name="Main_Equipment_Boiler_" Relationship="Self.FK__Contract__ID_Equ__4AB81AF0" FromRole="Contract" ToRole="Main_Equipment_Boiler_" />
+    <NavigationProperty Name="Object" Relationship="Self.FK__Contract__ID_Obj__4BAC3F29" FromRole="Contract" ToRole="Object" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ID_Employee" />
+    </Key>
+    <Property Name="ID_Employee" Type="Int32" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Middle_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Post" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Salary" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="Login" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Contract" Relationship="Self.FK__Contract__ID_Emp__49C3F6B7" FromRole="Employee" ToRole="Contract" />
+  </EntityType>
+  <EntityType Name="Fuel">
+    <Key>
+      <PropertyRef Name="ID_Fuel" />
+    </Key>
+    <Property Name="ID_Fuel" Type="Int32" Nullable="false" />
+    <Property Name="Title_Fuel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_Type_Fuel" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Type_Fuel" Relationship="Self.FK__Fuel__ID_Type_Fu__4CA06362" FromRole="Fuel" ToRole="Type_Fuel" />
+    <NavigationProperty Name="Main_Equipment_Boiler_" Relationship="Self.Boiler_Fuel" FromRole="Fuel" ToRole="Main_Equipment_Boiler_" />
+  </EntityType>
+  <EntityType Name="Main_Equipment_Boiler_">
+    <Key>
+      <PropertyRef Name="ID_Equipment" />
+    </Key>
+    <Property Name="ID_Equipment" Type="Int32" Nullable="false" />
+    <Property Name="Stamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Model" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Power" Type="Int32" Nullable="false" />
+    <Property Name="Unit_Of_Measurement" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Service" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PowerSumm" Type="Decimal" Precision="19" Scale="4" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Contract" Relationship="Self.FK__Contract__ID_Equ__4AB81AF0" FromRole="Main_Equipment_Boiler_" ToRole="Contract" />
+    <NavigationProperty Name="Fuel" Relationship="Self.Boiler_Fuel" FromRole="Main_Equipment_Boiler_" ToRole="Fuel" />
+  </EntityType>
+  <EntityType Name="Object">
+    <Key>
+      <PropertyRef Name="ID_Object" />
+    </Key>
+    <Property Name="ID_Object" Type="Int32" Nullable="false" />
+    <Property Name="Title_Object" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Purpose" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Work_Mode" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address_Object" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ID_Company" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK__Object__ID_Compa__4D94879B" FromRole="Object" ToRole="Company" />
+    <NavigationProperty Name="Contract" Relationship="Self.FK__Contract__ID_Obj__4BAC3F29" FromRole="Object" ToRole="Contract" />
+  </EntityType>
+  <EntityType Name="Type_Fuel">
+    <Key>
+      <PropertyRef Name="ID_Type_Fuel" />
+    </Key>
+    <Property Name="ID_Type_Fuel" Type="Int32" Nullable="false" />
+    <Property Name="Title_Type_Fuel" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Fuel" Relationship="Self.FK__Fuel__ID_Type_Fu__4CA06362" FromRole="Type_Fuel" ToRole="Fuel" />
+  </EntityType>
+  <Association Name="FK__Company__ID_Bank__46E78A0C">
+    <End Role="Bank_Details" Type="Self.Bank_Details" Multiplicity="1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Bank_Details">
+        <PropertyRef Name="ID_Bank_Details" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="ID_Bank_Details" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Object__ID_Compa__4D94879B">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Object" Type="Self.Object" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="ID_Company" />
+      </Principal>
+      <Dependent Role="Object">
+        <PropertyRef Name="ID_Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Contract__ID_Emp__49C3F6B7">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+    <End Role="Contract" Type="Self.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="ID_Employee" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="ID_Employee" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Contract__ID_Equ__4AB81AF0">
+    <End Role="Main_Equipment_Boiler_" Type="Self.Main_Equipment_Boiler_" Multiplicity="1" />
+    <End Role="Contract" Type="Self.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Main_Equipment_Boiler_">
+        <PropertyRef Name="ID_Equipment" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="ID_Equipment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Contract__ID_Obj__4BAC3F29">
+    <End Role="Object" Type="Self.Object" Multiplicity="1" />
+    <End Role="Contract" Type="Self.Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Object">
+        <PropertyRef Name="ID_Object" />
+      </Principal>
+      <Dependent Role="Contract">
+        <PropertyRef Name="ID_Object" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Fuel__ID_Type_Fu__4CA06362">
+    <End Role="Type_Fuel" Type="Self.Type_Fuel" Multiplicity="1" />
+    <End Role="Fuel" Type="Self.Fuel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type_Fuel">
+        <PropertyRef Name="ID_Type_Fuel" />
+      </Principal>
+      <Dependent Role="Fuel">
+        <PropertyRef Name="ID_Type_Fuel" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Boiler_Fuel">
+    <End Role="Main_Equipment_Boiler_" Type="Self.Main_Equipment_Boiler_" Multiplicity="*" />
+    <End Role="Fuel" Type="Self.Fuel" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="AccountingforTransactionsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bank_Details" EntityType="Self.Bank_Details" />
+    <EntitySet Name="Company" EntityType="Self.Company" />
+    <EntitySet Name="Contract" EntityType="Self.Contract" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" />
+    <EntitySet Name="Fuel" EntityType="Self.Fuel" />
+    <EntitySet Name="Main_Equipment_Boiler_" EntityType="Self.Main_Equipment_Boiler_" />
+    <EntitySet Name="Object" EntityType="Self.Object" />
+    <EntitySet Name="Type_Fuel" EntityType="Self.Type_Fuel" />
+    <AssociationSet Name="FK__Company__ID_Bank__46E78A0C" Association="Self.FK__Company__ID_Bank__46E78A0C">
+      <End Role="Bank_Details" EntitySet="Bank_Details" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Object__ID_Compa__4D94879B" Association="Self.FK__Object__ID_Compa__4D94879B">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Object" EntitySet="Object" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Contract__ID_Emp__49C3F6B7" Association="Self.FK__Contract__ID_Emp__49C3F6B7">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Contract" EntitySet="Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Contract__ID_Equ__4AB81AF0" Association="Self.FK__Contract__ID_Equ__4AB81AF0">
+      <End Role="Main_Equipment_Boiler_" EntitySet="Main_Equipment_Boiler_" />
+      <End Role="Contract" EntitySet="Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Contract__ID_Obj__4BAC3F29" Association="Self.FK__Contract__ID_Obj__4BAC3F29">
+      <End Role="Object" EntitySet="Object" />
+      <End Role="Contract" EntitySet="Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Fuel__ID_Type_Fu__4CA06362" Association="Self.FK__Fuel__ID_Type_Fu__4CA06362">
+      <End Role="Type_Fuel" EntitySet="Type_Fuel" />
+      <End Role="Fuel" EntitySet="Fuel" />
+    </AssociationSet>
+    <AssociationSet Name="Boiler_Fuel" Association="Self.Boiler_Fuel">
+      <End Role="Main_Equipment_Boiler_" EntitySet="Main_Equipment_Boiler_" />
+      <End Role="Fuel" EntitySet="Fuel" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,45 @@
+﻿<Page x:Class="Учет_сделок.Pages.CompanyEditPage"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Учет_сделок.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="1000"
+      Title="Добавление компании">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="410" TextAlignment="Center" Text="Введите название компании " FontSize="18"></TextBlock>
+            <TextBox FontSize="16" PreviewTextInput="OnlyLetters"  x:Name="TbTitleCompany" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="400" TextAlignment="Center" Text="Введите адрес компании " FontSize="18"></TextBlock>
+            <TextBox FontSize="16" x:Name="TbAddress" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="400" TextWrapping="Wrap" TextAlignment="Center" Text="Введите номер телефона компании " FontSize="18"></TextBlock>
+            <xctk:MaskedTextBox FontSize="16" PreviewTextInput="OnlyNumbers" Mask="8-000-000-00-00"                                
+                CaretIndex="0" x:Name="TbNumberPhone" Height="30" Width="350" Margin="10"></xctk:MaskedTextBox>
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="430" TextAlignment="Center" Text="Введите директора компании " FontSize="18"></TextBlock>
+            <TextBox FontSize="16" PreviewTextInput="OnlyLetters" x:Name="TbDirector" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="400" TextAlignment="Center" Text="Введите ИНН реквизитов " FontSize="18"></TextBlock>
+            <TextBox MaxLength="10" FontSize="16" x:Name="TbINN" Height="30" Width="350" Margin="10" PreviewTextInput="OnlyNumbers"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="300" TextAlignment="Center" Text="Введите КПП " FontSize="18"></TextBlock>
+            <TextBox MaxLength="9" FontSize="16" PreviewTextInput="OnlyNumbers" x:Name="TbPPC" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="300" TextAlignment="Center" Text="Введите БИК " FontSize="18"></TextBlock>
+            <TextBox MaxLength="8" FontSize="16" PreviewTextInput="OnlyNumbers" x:Name="TbBIC" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock TextWrapping="Wrap" Foreground="White" Margin="0,25,0,10" Height="35" Width="340" TextAlignment="Center" Text="Введите расчетный счет " FontSize="18"></TextBlock>
+            <TextBox MaxLength="10" FontSize="16" PreviewTextInput="OnlyNumbers"  x:Name="TbPaymentAccount" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock TextWrapping="Wrap" Foreground="White" Margin="0,25,0,10" Height="35" Width="400" TextAlignment="Center" Text="Введите корреспондентский счет " FontSize="18"></TextBlock>
+            <TextBox MaxLength="10" FontSize="16" PreviewTextInput="OnlyNumbers"  x:Name="TbCorrespondent_Account" Height="30" Width="350" Margin="10"></TextBox>
+            <TextBlock Foreground="White" Margin="0,25,0,10" Height="35" Width="340" TextAlignment="Center" Text="Введите ОГРН " FontSize="18"></TextBlock>
+            <TextBox MaxLength="10" FontSize="16" PreviewTextInput="OnlyNumbers" x:Name="TbOGRN" Height="30" Width="350" Margin="10"/>
+        </StackPanel>
+        <Button Click="BtnReady_Click" HorizontalAlignment="Center" Margin="0 0 0 30" Grid.ColumnSpan="2" VerticalAlignment="Bottom"  x:Name="BtnReady"  Content="Выполнить" FontSize="20" Height="45" Width="200"></Button>
+
+    </Grid>
+</Page>

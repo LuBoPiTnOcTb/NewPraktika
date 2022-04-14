@@ -1,0 +1,62 @@
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\MainWindow.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\Authorization.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\CompanyEditPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ContractPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\EquipmentPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\MainMenu.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ObjectPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\App.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок_Content.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок_MarkupCompile.cache
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок_MarkupCompile.lref
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ContractEditPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Учет сделок.exe.config
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Учет сделок.exe
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Учет сделок.pdb
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\EntityFramework.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\EntityFramework.xml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\App.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\MainWindow.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\Authorization.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\CompanyEditPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ContractEditPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ContractPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\EquipmentPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\MainMenu.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ObjectPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.g.resources
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет_сделок.Properties.Resources.resources
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.csproj.CopyComplete
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.exe
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.pdb
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\EquipmentEditPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\EquipmentEditPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ObjectEditPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\ObjectEditPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\CompaniesPage.g.cs
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Pages\CompaniesPage.baml
+C:\Users\User\Source\Repos\Учет сделок\Учет сделок\obj\Debug\Учет сделок.csproj.ResolveComReference.cache

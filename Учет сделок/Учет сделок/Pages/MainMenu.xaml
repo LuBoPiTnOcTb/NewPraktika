@@ -1,0 +1,40 @@
+﻿<Page x:Class="Учет_сделок.Pages.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Учет_сделок.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1000"
+      Title="Главное меню">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0.4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="0" Grid.RowSpan="2" Margin="15" VerticalAlignment="Center">
+            <Button x:Name="btnObject" Click="btnObject_Click"  Content="Объекты" Width="170" Height="55"  Margin="0 70"/>
+            <Button x:Name="btnCompany" Click="btnCompany_Click" Margin="0 70" Width="170" Height="55" Content="Компании"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.RowSpan="2" Margin="15">
+            <Button x:Name="btnEquipment" Click="btnEquipment_Click"  Content="Оборудования" Width="170" Height="55" Margin="0 70"/>
+            <Button x:Name="btnContract" Click="btnContract_Click" Width="170" Height="55" Margin="0 70" >
+                <TextBlock Text="Договора" TextWrapping="Wrap"/>
+            </Button>
+            <Button Click="btnExit_Click" x:Name="btnExit" Width="170" Height="55" Margin="0 70">
+                <TextBlock Text="Выйти из аккаунта" TextWrapping="Wrap"></TextBlock>
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center" Grid.RowSpan="2">
+            <TextBlock FontSize="30" TextAlignment="Center" TextWrapping="Wrap" Text=" ООО 'ПРОЕКТНАЯ ГРУППА  'ТЕПЛО В ДОМ'"/>
+            <Image Grid.RowSpan="2" Grid.Column="1" Grid.Row="1" Height="250" Source="/Photos/Логотип.png" />
+            <TextBlock x:Name="TbUser" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" TextAlignment="Center" TextWrapping="Wrap" Grid.Column="1" Grid.Row="0" Width="500"/>
+        </StackPanel>
+    </Grid>
+</Page>

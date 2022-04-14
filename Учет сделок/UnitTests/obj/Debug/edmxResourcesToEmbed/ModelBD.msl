@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище AccountingforTransactionsModelContainer" CdmEntityContainer="AccountingforTransactionsEntities">
+    <EntitySetMapping Name="Bank_Details">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Bank_Details">
+        <MappingFragment StoreEntitySet="Bank_Details">
+          <ScalarProperty Name="ID_Bank_Details" ColumnName="ID_Bank_Details" />
+          <ScalarProperty Name="INN" ColumnName="INN" />
+          <ScalarProperty Name="PPC" ColumnName="PPC" />
+          <ScalarProperty Name="BIC" ColumnName="BIC" />
+          <ScalarProperty Name="Payment_Account" ColumnName="Payment_Account" />
+          <ScalarProperty Name="Correspondent_Account" ColumnName="Correspondent_Account" />
+          <ScalarProperty Name="OGRN" ColumnName="OGRN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="ID_Company" ColumnName="ID_Company" />
+          <ScalarProperty Name="ID_Bank_Details" ColumnName="ID_Bank_Details" />
+          <ScalarProperty Name="Title_Company" ColumnName="Title_Company" />
+          <ScalarProperty Name="Address_Company" ColumnName="Address_Company" />
+          <ScalarProperty Name="Number_Phone" ColumnName="Number_Phone" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contract">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Contract">
+        <MappingFragment StoreEntitySet="Contract">
+          <ScalarProperty Name="ID_Contract" ColumnName="ID_Contract" />
+          <ScalarProperty Name="Date_Conclusion" ColumnName="Date_Conclusion" />
+          <ScalarProperty Name="Valid_For" ColumnName="Valid_For" />
+          <ScalarProperty Name="ID_Object" ColumnName="ID_Object" />
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="ID_Equipment" ColumnName="ID_Equipment" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Middle_Name" ColumnName="Middle_Name" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fuel">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Fuel">
+        <MappingFragment StoreEntitySet="Fuel">
+          <ScalarProperty Name="ID_Fuel" ColumnName="ID_Fuel" />
+          <ScalarProperty Name="Title_Fuel" ColumnName="Title_Fuel" />
+          <ScalarProperty Name="ID_Type_Fuel" ColumnName="ID_Type_Fuel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Main_Equipment_Boiler_">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Main_Equipment_Boiler_">
+        <MappingFragment StoreEntitySet="Main_Equipment(Boiler)">
+          <ScalarProperty Name="ID_Equipment" ColumnName="ID_Equipment" />
+          <ScalarProperty Name="Stamp" ColumnName="Stamp" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Power" ColumnName="Power" />
+          <ScalarProperty Name="Unit_Of_Measurement" ColumnName="Unit_Of_Measurement" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+          <ScalarProperty Name="PowerSumm" ColumnName="PowerSumm" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Object">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Object">
+        <MappingFragment StoreEntitySet="Object">
+          <ScalarProperty Name="ID_Object" ColumnName="ID_Object" />
+          <ScalarProperty Name="Title_Object" ColumnName="Title_Object" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="Work_Mode" ColumnName="Work_Mode" />
+          <ScalarProperty Name="Address_Object" ColumnName="Address_Object" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ID_Company" ColumnName="ID_Company" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Fuel">
+      <EntityTypeMapping TypeName="AccountingforTransactionsModel.Type_Fuel">
+        <MappingFragment StoreEntitySet="Type_Fuel">
+          <ScalarProperty Name="ID_Type_Fuel" ColumnName="ID_Type_Fuel" />
+          <ScalarProperty Name="Title_Type_Fuel" ColumnName="Title_Type_Fuel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Boiler_Fuel" TypeName="AccountingforTransactionsModel.Boiler_Fuel" StoreEntitySet="Boiler_Fuel">
+      <EndProperty Name="Main_Equipment_Boiler_">
+        <ScalarProperty Name="ID_Equipment" ColumnName="ID_Equipment" />
+      </EndProperty>
+      <EndProperty Name="Fuel">
+        <ScalarProperty Name="ID_Fuel" ColumnName="ID_Fuel" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
